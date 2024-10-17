@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom styles -->
+    <style>
+      /* Background section with slanting effect */
+      #assignment {
+        background: linear-gradient(155deg, #4c2889 50%, #e9e9f2 35%);
+      }
+
+      /* Creating a slanting background using pseudo-element */
+      .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: -1;
+        border-radius: 15px;
+      }
+
+      /* Styling for the circular icons */
+      .card .icon-container {
+        background-color: white;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto -35px; /* Adjust to overlap */
+        position: relative;
+        z-index: 10;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border: 4px solid #4c2889; /* Updated border color */
+      }
+
+      /* Circular icon inside */
+      .card .icon-container i {
+        font-size: 30px;
+        color: #4c2889; /* Icon color */
+      }
+
+      /* Additional card spacing */
+      .card {
+        padding-top: 30px;
+        height: 400px;
+        position: relative;
+        transition: transform 1s ease-in-out;
+      }
+      .cardm {
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main container for services with ID 'assignment' -->
+    <div id="assignment" class="bg-indigo-900 py-12">
+      <div class="container mx-auto">
+        <!-- Title Section -->
+        <h2 class="text-4xl font-bold text-white text-left mb-10  pl-10">
+          OUR SERVICES
+        </h2>
+
+        <!-- Service Cards Section -->
+        <div
+          class="cardm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 lg:px-10"
+        >
+          <!-- Service Card 1 -->
+          <div
+            class="card group relative bg-white p-6 shadow-md rounded-lg"
+          >
+            <div class="icon-container absolute -top-20 rounded-sm  border-4">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-center text-gray-800">
+              Emergency Plumbing Services
+            </h3>
+            <p class="text-center text-gray-600 mb-6">
+              Our plumbers are ready to go 24/7 for emergencies - including
+              nights, weekends, and holidays.
+            </p>
+            <div class="text-center">
+              <a
+                href="#"
+                class="text-indigo-500 font-bold transition duration-300 hover:text-indigo-600"
+                >Explore this Service &rarr;</a
+              >
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="card group relative bg-white p-6 shadow-md rounded-lg">
+            <div class="icon-container absolute -top-20 rounded-sm p-4 border-4">
+              <i class="fas fa-shower"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-center text-gray-800">
+              Plumbing and Drains
+            </h3>
+            <p class="text-center text-gray-600 mb-6">
+              As the largest plumbing and drain service company, we make
+              thousands of repairs every day.
+            </p>
+            <div class="text-center">
+              <a
+                href="#"
+                class="text-indigo-500 font-bold transition duration-300 hover:text-indigo-600"
+                >Explore this Service &rarr;</a
+              >
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="card group relative bg-white p-6 shadow-md rounded-lg">
+            <div class="icon-container absolute -top-20 rounded-sm p-4 border-4">
+              <i class="fa-solid fa-droplet" style="color: #3a2182;"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-center text-gray-800">
+              Water Damage
+            </h3>
+            <p class="text-center text-gray-600 mb-6">
+              Our teams are equipped with state-of-the-art water extraction and
+              cleanup equipment.
+            </p>
+            <div class="text-center">
+              <a
+                href="#"
+                class="text-indigo-500 font-bold transition duration-300 hover:text-indigo-600"
+                >Explore this Service &rarr;</a
+              >
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="card group relative bg-white p-6 shadow-md rounded-lg">
+            <div class="icon-container absolute -top-20 rounded-sm p-4 border-4">
+              <i class="fas fa-fire-alt"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-center text-gray-800">
+              Water Heaters
+            </h3>
+            <p class="text-center text-gray-600 mb-6">
+              Trust us for repair and replacement of gas, electric, and tankless
+              water heaters.
+            </p>
+            <div class="text-center">
+              <a
+                href="#"
+                class="text-indigo-500 font-bold transition duration-300 hover:text-indigo-600"
+                >Explore this Service &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Include the anime.js library for smooth 360-degree rotation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- JS to add 360-degree rotation on hover -->
+    <script>
+      document.querySelectorAll(".group").forEach((card) => {
+        card.addEventListener("mouseover", () => {
+          anime({
+            targets: card,
+            rotate: "1turn",
+            duration: 1000,
+            easing: "easeInOutSine",
+          });
+        });
+
+        card.addEventListener("mouseout", () => {
+          anime({
+            targets: card,
+            rotate: "0turn",
+            duration: 1000,
+            easing: "easeInOutSine",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
